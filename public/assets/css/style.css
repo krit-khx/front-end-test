@@ -1,0 +1,420 @@
+p,
+div {
+  font-family: sukumvit;
+}
+
+body {
+  background-color: #d1d0d8;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 11%);
+  min-height: 600px;
+  border-radius: 36px;
+  margin-top: 108px;
+  margin-left: auto;
+  max-width: 600px;
+  margin-right: auto;
+  background-color: #f4f4f4;
+  min-width: 250px;
+}
+
+.progressCard {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 2%);
+  width: 80%;
+  height: 100px;
+  border-radius: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #e07c7c;
+}
+
+.cardtodo {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 2%);
+  width: 80%;
+  height: 48px;
+  border-radius: 44px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.task {
+  margin-left: 60px;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.texttodo {
+  padding-left: 40px;
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.textTodoEdit {
+  padding-left: 30px;
+  padding-top: 12px;
+  font-size: 15px;
+}
+
+
+.timeline {
+  border-radius: 24px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  background-color: #272626;
+  height: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: -1px;
+  z-index: 10;
+}
+.progress {
+  min-width: 15px;
+  max-width: 100%;
+  z-index: 1;
+  border-radius: 500px;
+  position: absolute;
+  background-color: white;
+  height: 8px;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.2s ease;
+}
+.progressText {
+  padding-top: 12px;
+  font-size: 17px;
+  padding-left: 26px;
+}
+.progressText2 {
+  padding-top: 5px;
+  font-size: 15px;
+  padding-left: 26px;
+  color : rgba(255, 255, 255, 0.705)
+}
+.progressText font {
+  color : white
+}
+
+.progressBarPosition {
+  padding-top: 10px;
+}
+
+.select1 {
+  width: 100px;
+  height: 35px;
+  border-radius: 14px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 2%);
+  border: aliceblue;
+}
+
+.dots {
+  color: #cccccc;
+  text-align: end;
+  margin-right: 26px;
+  margin-top: -37px;
+  font-size: 34px;
+}
+
+.input {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 3%);
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: white;
+  border: aliceblue;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+.inputEdit {
+  border-radius: 7px;
+  width: 79%;
+  height: 30px;
+  background-color: whitesmoke;
+  border: aliceblue;
+  margin-top: -15px;
+}
+
+.divinput {
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 25px;
+}
+
+
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  margin-top: 13px;
+  margin-left: 18px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked~.checkmark {
+  background-color: #e07c7c;
+}
+
+.checked {
+  margin-top: 13px;
+  margin-left: 18px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border-radius: 8px;
+  background-color: #e07c7c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.progressInContainer{
+  padding-top: 50px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-size: 12px;
+  display: none;
+  position: absolute;
+  padding: 10px;
+  text-align: start;
+  right: 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown:hover .dropdown-content {display: block;}
+
+.button{
+  color: #ffffff;
+    background: #e07c7c;
+    width: 14%;
+    font-size: 13px;
+    border: white;
+    border-radius: 23px;
+    height: 25px;
+    margin-left: 9px;
+    z-index: 0
+}
+
+.select {
+  margin-top: -46px;
+    float: right;
+    padding-right: 59px;
+   
+  
+   
+}
+
+.select-box {
+  position: relative;
+  display: block;
+  width: 100px;
+  font-size: 13px;
+  color: #60626d;
+}
+
+.select-box__current {
+  position: relative;
+  box-shadow: 0 15px 30px -10px rgb(0 0 0 / 0%);
+  cursor: pointer;
+  outline: none;
+}
+.select-box__current:focus + .select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+  animation-name: none;
+}
+.select-box__current:focus + .select-box__list .select-box__option {
+  cursor: pointer;
+}
+.select-box__current:focus .select-box__icon {
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.select-box__icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 13px;
+  opacity: 0.3;
+  transition: 0.2s ease;
+}
+.select-box__value {
+  display: flex;
+}
+.select-box__input {
+  display: none;
+}
+.select-box__input:checked + .select-box__input-text {
+  display: block;
+}
+.select-box__input-text {
+  display: none;
+  width: 100%;
+  margin: 0;
+  height: 18px;
+  padding: 15px;
+  border-radius: 44px;
+  background-color: #ffffff;
+}
+.select-box__list {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  -webkit-animation-name: HideList;
+  animation-name: HideList;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: step-start;
+  animation-timing-function: step-start;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 3%);
+}
+.select-box__option {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+}
+.select-box__option:hover,
+.select-box__option:focus {
+  color: #ffffff;
+  background-color:#e07c7c;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+
+.flex-container {
+  display: flex;
+    margin-top: 15px;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 10%;
+}
+
+.flex-item-right {
+  padding-top: 39px;
+  flex: 20%;
+}
+
+.flex-item-center {
+  flex: 70%;
+    text-align: initial;
+}
